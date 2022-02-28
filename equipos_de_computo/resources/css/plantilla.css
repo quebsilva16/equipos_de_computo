@@ -1,0 +1,26 @@
+body
+{
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+header
+{
+    padding-top: 20px;
+
+}
+header > div
+{
+    text-align: center;
+}
+header > div > a
+{
+    font-size: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.contenedor
+{
+    margin-left: 350px;
+    margin-right: 350px;
+}

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +11,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function(){
+    return redirect()->to('index');
 });
+
+Route::get('index', [\App\Http\Controllers\EquiposController::class, 'index'])->name('index');
+Route::get('agregar',[\App\Http\Controllers\EquiposController::class, 'agregar'])->name('agregar');
+Route::post('guardar',[\App\Http\Controllers\EquiposController::class, 'guardar'])->name('guardar');
